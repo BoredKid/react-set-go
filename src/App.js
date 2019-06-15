@@ -24,13 +24,13 @@ const AppRouter = () => {
               <BoredLink path="/" label="Stream" />
             </li>
             <li>
-              <BoredLink path="/about/" label="About" />
+              <BoredLink path="/vod/" label="VOD" />
             </li>
             <li>
               <BoredLink href="https://github.com/BoredKid/BoredStream" label="Repo" />
             </li>
             <li>
-              <BoredLink path="/vod/" label="VOD" />
+              <BoredLink path="/about/" label="About" />
             </li>
           </ul>
         </nav>
@@ -43,10 +43,12 @@ const AppRouter = () => {
   );
 };
 
+const BigTitle = () => <h1>Bored Stream</h1>;
+
 const App = () => {
   return (
     <div>
-      <h1>Welcome to the Bored Stream Website ;)</h1>
+      <BigTitle />
       <AppRouter />
     </div>
   );
