@@ -1,36 +1,36 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import BoredLink from './components/BoredLink/BoredLink';
 
-function Stream() {
+const Stream = () => {
   return <h2>Stream</h2>;
-}
+};
 
-function Vod() {
+const Vod = () => {
   return <h2>VOD</h2>;
-}
+};
 
-function About() {
+const About = () => {
   return <h2>About</h2>;
-}
+};
 
-function AppRouter() {
+const AppRouter = () => {
   return (
     <Router>
       <div>
         <nav>
           <ul>
             <li>
-              <BoredLink path="/" label="Stream"/>
+              <BoredLink path="/" label="Stream" />
             </li>
             <li>
-              <BoredLink path="/about/" label="About"/>
+              <BoredLink path="/about/" label="About" />
             </li>
             <li>
-              <BoredLink href="https://github.com/BoredKid/BoredStream" label="Repo"/>
+              <BoredLink href="https://github.com/BoredKid/BoredStream" label="Repo" />
             </li>
             <li>
-              <BoredLink path="/vod/" label="VOD"/>
+              <BoredLink path="/vod/" label="VOD" />
             </li>
           </ul>
         </nav>
@@ -41,15 +41,15 @@ function AppRouter() {
       </div>
     </Router>
   );
-}
-function App() {
+};
+
+const App = () => {
   return (
     <div>
       <h1>Welcome to the Bored Stream Website ;)</h1>
-      <AppRouter/>
+      <AppRouter />
     </div>
-
   );
-}
+};
 
 export default App;
