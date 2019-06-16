@@ -1,0 +1,10 @@
+body {
+    background-color:white;
+}
+
+.bigTitle {
+    width: 100%;
+    text-align: center;
+    color:#D75F09;
+    background-color: #120C36;
+}
