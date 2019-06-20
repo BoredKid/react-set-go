@@ -1,15 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { string } from 'prop-types';
+import { string, bool } from 'prop-types';
 
-const BoredLink = ({ path, label, href }) => (
-  <div className="boredLink">{path ? <Link to={path}>{label}</Link> : <a href={href}>{label}</a>}</div>
+const BoredLink = ({ path, label, href, isLive }) => (
+  <div className="boredLink">
+    {isLive && (
+      <div className="liveSpot">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    )}
+    {path ? <Link to={path}>{label}</Link> : <a href={href}>{label}</a>}
+  </div>
 );
 
 BoredLink.propTypes = {
   path: string,
   label: string,
-  href: string
+  href: string,
+  isLive: bool
 };
 
 export default BoredLink;
