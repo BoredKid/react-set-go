@@ -4,8 +4,8 @@ import { ABOUT } from '../../utils/constants';
 
 const AboutItem = ({ label, content }) => (
   <div className="aboutItem">
-    <p className="aboutItemLabel">{label} :</p>
-    <p className="aboutItemContent">&nbsp;{content}</p>
+    <p className="aboutItemLabel">{label}:</p>
+    <p className="aboutItemContent">{content}</p>
   </div>
 );
 

@@ -15,4 +15,5 @@ body {
 
 .app{
     height: 100%;
+    justify-content: stretch;
 }
