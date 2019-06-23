@@ -1,0 +1,32 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ABeeZee', sans-serif;
+    color: #fbefe6;
+    flex-direction: column;
+}
+
+.about > h2 {
+    font-family: 'Schoolbell', cursive;
+    color:#DF864E;
+}
+
+.aboutList {
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.aboutItem {
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutItemLabel {
+    color: #81ADEB;
+}
+
+.aboutItemContent {
+    color:#DF864E;
+}
