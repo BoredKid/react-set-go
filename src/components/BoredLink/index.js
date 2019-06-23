@@ -11,7 +11,13 @@ const BoredLink = ({ path, label, href, isLive }) => (
         <div></div>
       </div>
     )}
-    {path ? <Link to={path}>{label}</Link> : <a href={href}>{label}</a>}
+    {path ? (
+      <Link to={path}>{label}</Link>
+    ) : (
+      <a rel="noopener noreferrer" target="_blank" href={href}>
+        {label}
+      </a>
+    )}
   </div>
 );
 

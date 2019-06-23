@@ -21,7 +21,7 @@ const Menu = () => {
 
         <BoredLink path="/" label="Stream" isLive={isStreamLive} />
 
-        <BoredLink href="https://github.com/BoredKid/BoredStream" label="Repos" />
+        <BoredLink href="https://github.com/BoredKid" label="Repos" />
 
         <BoredLink path="/about/" label="About" />
       </div>
